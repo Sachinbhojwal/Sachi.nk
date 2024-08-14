@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Surve Project</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            background-color: aqua;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        table {
+            background-color: aliceblue;
+            margin: auto;
+            border-radius: 15px;
+            width: 55%;
+        }
+
+        .nameE {
+            text-align: right;
+        }
+
+        [type~="Checkbox"] {
+            padding: 0px;
+
+        }
+
+        .dropbtn {
+            background-color: #eeeeef;
+            color: rgb(4, 4, 4);
+            width: 150px;
+            height: 35px;
+            font-size: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: none;
+        }
+
+        [type~="button"] {
+            background-color: #08f;
+            text-align: center;
+            font-size: 22px;
+            height: 45px;
+            width: 200px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .button {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Survey Form for the food quality of subway</h1>
+    <form action="">
+        <table cellspacing="4" cellpadding="6">
+            <tr>
+                <td colspan="2">
+                    <h3>Tell us what you had experienced with our food!</h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameE">Name</td>
+                <td>
+                    <input type="name" placeholder="Enter your name" id="" size="60">
+                </td>
+            </tr>
+            <tr>
+                <td class="nameE">Email</td>
+                <td>
+                    <input type="email" placeholder="Enter your email address" size="60">
+                </td>
+            </tr>
+            <tr>
+                <td class="nameE">On a scale of 1-10, how good was it?</td>
+                <td>
+                    <input type="text" name="rate" placeholder="Enter a number between 1-10" size="60">
+                </td>
+            </tr>
+            <tr>
+                <td class="nameE">Where did you eat at?</td>
+                <td>
+                    <select class="dropbtn">
+                        <option>At Home</option>
+                        <option value="">At Resturant</option>
+                        <option value="">At Hotel</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="nameE">At what time of day you eat it?</td>
+                <td>
+                    <input type="radio" name="day">Morning
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="radio" name="day">Afternoon
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="radio" name="day">Evening
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="nameE">
+                    What emotions did you experience?<br>
+                    (Select all that apply)
+                </td>
+                <td>
+                    <input type="checkbox">Excited
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox">Humbled
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox">Elated
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox">Loved
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox">Enthusiastic
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td align="right">Please describe your feedback to us.</td>
+                <td>
+                    <textarea rows="3" cols="50" placeholder="Enter your Experience here..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="button">
+                    <input type="button" name="Submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

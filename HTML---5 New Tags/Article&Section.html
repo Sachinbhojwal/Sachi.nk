@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article > header time{
+            font-size: 14px;
+            display: block;
+            width: 30px;
+            padding: 2px;
+            text-align: center;
+            background-color: #993333;
+            color: #fff;
+            font-weight: bold;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            float: left;
+            margin-bottom: 10px;
+        }
+        article > header time span{
+            font-size: 10px;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+        article > header h1{
+            font-size: 20px;
+            float: left;
+            margin-left: 14px;
+            text-shadow: 2px 2px 5px #333;
+        }
+        article > header h1 a{
+            color: #993333;
+        }
+        article > section header h1{
+            font-size: 16px;
+        }
+        article p{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <time datetime="2010-01-12" pubdate><span>Jan</span>12</time>
+            <h1><a href="#" title="Link to this post" rel="bookmark">Article Heading</a></h1>
+        </header>
+        <p>This is an article that demonstrates some of the new
+            features that HTML5 and css3 has to offer. This article 
+            contains several sections, each with its own heading,
+            as well as a video element which will play a video without
+            flash on browsers that support it.
+        </p>
+        <header>
+            <h1>This is a section heading</h1>
+        </header>
+            <p>This is an example of a basic section of a document.
+                A section can refer to different parts of a document,
+                application, or page.According to the draft W3S spec, HTML5 sections usually have headings
+            </p>
+    </article>
+</body>
+</html>

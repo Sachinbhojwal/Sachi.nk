@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section form{
+            border: 1px solid #888;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10;
+            border-radius: 10px;
+            -moz-box-shadow: 10px 10px 5px #888;
+            background-color: #eee;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        section label{
+            font-weight: bold;
+            font-size: 20px;
+            padding: 5px;
+        }
+        section input{
+            margin-bottom: 3px;
+            font-size: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>This is a feedback form</h1>
+        </header>
+        <p>
+            <form action="">
+                <label for="contact_name">Name</label>
+                <input id="contact_name" placeholder="Enter your name" autofocus>
+                <br><br>
+                <label for="contact_email">E-mail</label>
+                <input id="contact_email" placeholder="Enter your E-mail address">
+                <br><br>
+                <label for="contact_phone">Phone</label>
+                <input type="tel" id="contact_phone" placeholder="Enter your phone number">
+                <br><br>
+                <label for="contact_callback">Callback on:</label>
+                <input type="date" name="bday">
+                <br><br>
+                <label for="priority">Priority :</label>
+                <input type="range" name="points" min="0" max="10">
+                <br><br>
+                <input type="button" name="Request Call" value="Request Call">    
+            </form>
+        </p>
+    </section>
+</body>
+</html>

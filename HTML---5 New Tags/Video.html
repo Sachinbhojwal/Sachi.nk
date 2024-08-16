@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article > section video{
+            width: 480px;
+            height: 200px;
+        }
+        article > section div.No_HTML5_Video, article > section div#no-canvas{
+            width: 480px;
+            height: 40px;
+            border: 1px solid #993333;
+            text-align: center;
+            color: #993333;
+            font-size: 13px;
+            font-style: italic;
+            background-color: #f7e9e9;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>This is a video section</h1>
+        </header>
+        <p>
+            <video src="natural video.mp4" controls autoplay></video>
+            <div class="No_HTML5_Video">
+                <p>This video will work in Mozilla Firefox or Google Crome only</p>
+            </div>
+        </p>
+    </section>
+</body>
+</html>

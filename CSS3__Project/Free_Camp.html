@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: auto;
+            padding: 0%;
+        }
+
+        .main {
+            width: 100%;
+            height: 2000px;
+            background-image: url(5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .container {
+            width: 100%;
+            height: 2000px;
+            background-color: blue;
+        
+            opacity: 0.5;
+            
+            text-align: center;
+        }
+
+        h1,
+        p {
+            color: #fff;
+            font-size: 25px;
+        }
+        .box{
+            margin-left: 500px;
+            border-radius: 10px;
+            width: 50%;
+            height: 1700px;
+            position: static;
+            background-color: rgba(42, 5, 77,1);
+        }
+        .box1{
+            text-align: left;
+            margin-top: 50px;
+            padding: 10px;
+            margin-left: 45px;
+
+        }
+        .name{
+            text-align: left;
+            color: #fff;
+            font-size: 35px;
+            padding: 10px;
+        }
+        .inp1{
+            color: #000;
+            width: 90%;
+            height: 45px;
+            padding: 25px;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+        .box2{
+            text-align: left;
+            margin-top: 10px;
+            padding: 10px;
+            margin-left: 45px;
+        }
+        .opt1{
+            color: #fff;
+            padding: 10px;
+            font-size: 25px;
+        }
+        .select{
+            width: 90%;
+            height: 55px;
+            font-size: 25px;
+            padding: 10px;
+            border-radius: 10px; 
+        }
+        .radio, #checkbox{
+            display: inline-block;
+            margin-right: 0.625rem;
+            min-height: 1.25rem;
+            min-width: 1.25rem;
+            text-align: left;
+        }
+        .area{
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 25px;
+            width: 90%;
+        }
+        .sub{
+            width: 90%;
+            height: 55px;
+            font-size: 25px;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container"><br><br>
+            <header>
+                <h1>FreeCodeCamp Survey Form</h1>
+                <p>Thank you for taking the time to help us improve the platform</p>
+            </header>
+            <form action="" class="box">
+                <div class="box1">
+                    <label for="name" class="name">Name</label><br>
+                    <input class="inp1" type="text" size="70" placeholder="Enter your name">
+                </div>
+                <div class="box2">
+                    <label for="Email" class="name">Email</label><br>
+                    <input class="inp1" type="Email" size="70" placeholder="Enter your email">
+                </div>
+                <div class="box2">
+                    <label for="Age" class="name">Age(optional)</label><br>
+                    <input class="inp1" type="Email" size="70" placeholder="Enter your age">
+                </div>
+                <div class="box2">
+                    <label for="role" class="opt1">Which option best describes your current role?</label><br>
+                    <select class="select">
+                        <option value="">Select current role</option>
+                        <option value="">Student</option>
+                        <option value="">Full Time Job</option>
+                        <option value="">Full Time Learner</option>
+                        <option value="">Prefer not to say</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+                <div class="box2">
+                    <label class="opt1" for="">Would you recommend freeCodeCamp to a friend</label><br>
+                    <input type="radio" value="Definitely" class="radio"><label class="name" for="">Definitely</label><br>
+                    <input type="radio" value="Maybe" class="radio"><label class="name" for="">Maybe</label><br>
+                    <input type="radio" value="not-sure" class="radio"><label class="name" for="">Not sure</label>
+                </div>
+                <div class="box2">
+                    <label class="opt1">What is your favorite feature of freeCodeCamp?</label>
+                    <select class="select">
+                        <option value="">Select an option</option>
+                        <option value="">Challanges</option>
+                        <option value="">Project</option>
+                        <option value="">Community</option>
+                        <option value="">Open Source</option>
+                    </select>
+                </div>
+                <div class="box2">
+                    <label class="opt1">What would you like to see improved? <span>(Check all that apply)</span></label><br>
+                    <input type="checkbox" id="checkbox"><label class="name">Front-end Projects</label><br>
+                    <input type="checkbox" id="checkbox"><label class="name">Back-end Project</label><br>
+                    <input type="checkbox" id="checkbox"><label class="name">Data Visualization</label><br>
+                    <input type="checkbox" id="checkbox"><label class="name">Challenges</label><br>
+                    <input type="checkbox" id="checkbox"><label class="name">Open Source Community</label><br>
+                    <input type="checkbox" id="checkbox"><label class="name">Fitter help rooms</label><br>
+                    <input type="checkbox" id="checkbox"><label class="name">Videos</label><br>
+                    <input type="checkbox" id="checkbox"><label class="name">City Meetups</label><br>
+                    <input type="checkbox" id="checkbox"><label class="name">Wiki</label><br>
+                    <input type="checkbox" id="checkbox"><label class="name">Forum</label><br>
+                    <input type="checkbox" id="checkbox"><label class="name">Additional Courses</label><br>
+                </div>
+                <div class="box2">
+                    <label class="name">Any comments or suggestions?</label><br>
+                    <textarea class="area" cols="50" rows="6">Enter your comment here....</textarea>
+                </div>
+                <div class="box2">
+                    <input type="button" class="sub" size="50" name="button" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
